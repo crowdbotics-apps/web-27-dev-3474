@@ -15,6 +15,13 @@ class CustomText(models.Model):
         blank=True,
         related_name="customtext_ttestt",
     )
+    ttesttt = models.ForeignKey(
+        "home.CustomText",
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name="customtext_ttesttt",
+    )
 
     def __str__(self):
         return self.title
