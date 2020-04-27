@@ -8,19 +8,31 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0005_customtext_test'),
-        ('users', '0004_auto_20200427_1357'),
+        ("home", "0005_customtext_test"),
+        ("users", "0004_auto_20200427_1357"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='user',
-            name='sfdarsdf',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='user_sfdarsdf', to='home.CustomText'),
+            model_name="user",
+            name="sfdarsdf",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="user_sfdarsdf",
+                to="home.CustomText",
+            ),
         ),
         migrations.AddField(
-            model_name='user',
-            name='tghrtg',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='user_tghrtg', to=settings.AUTH_USER_MODEL),
+            model_name="user",
+            name="tghrtg",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="user_tghrtg",
+                to=settings.AUTH_USER_MODEL,
+            ),
         ),
     ]
