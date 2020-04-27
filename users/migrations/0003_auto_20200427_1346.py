@@ -7,24 +7,42 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0002_load_initial_data'),
-        ('users', '0002_auto_20200427_0742'),
+        ("home", "0002_load_initial_data"),
+        ("users", "0002_auto_20200427_0742"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='user',
-            name='test',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='user_test', to='home.CustomText'),
+            model_name="user",
+            name="test",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="user_test",
+                to="home.CustomText",
+            ),
         ),
         migrations.AddField(
-            model_name='user',
-            name='testt',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='user_testt', to='home.CustomText'),
+            model_name="user",
+            name="testt",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="user_testt",
+                to="home.CustomText",
+            ),
         ),
         migrations.AddField(
-            model_name='user',
-            name='testtt',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='user_testtt', to='home.CustomText'),
+            model_name="user",
+            name="testtt",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="user_testtt",
+                to="home.CustomText",
+            ),
         ),
     ]
