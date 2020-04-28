@@ -10,23 +10,23 @@ class CustomText(models.Model):
     title = models.CharField(max_length=150,)
     ttestt = models.ForeignKey(
         "home.CustomText",
-        on_delete=models.PROTECT,
         null=True,
         blank=True,
+        on_delete=models.PROTECT,
         related_name="customtext_ttestt",
     )
     ttesttt = models.ForeignKey(
         "home.CustomText",
-        on_delete=models.SET_NULL,
         null=True,
         blank=True,
+        on_delete=models.SET_NULL,
         related_name="customtext_ttesttt",
     )
     test = models.ForeignKey(
         settings.AUTH_USER_MODEL,
-        on_delete=models.SET_NULL,
         null=True,
         blank=True,
+        on_delete=models.SET_NULL,
         related_name="customtext_test",
     )
 
@@ -46,16 +46,16 @@ class HomePage(models.Model):
     body = models.TextField()
     czvfc = models.ForeignKey(
         "home.CustomText",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="homepage_czvfc",
     )
     ghcgv = models.ForeignKey(
         "home.HomePage",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="homepage_ghcgv",
     )
 

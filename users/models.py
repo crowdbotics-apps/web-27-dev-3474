@@ -9,51 +9,37 @@ class User(AbstractUser):
     name = models.CharField(null=True, blank=True, max_length=255,)
     test = models.ForeignKey(
         "home.CustomText",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="user_test",
     )
     testt = models.ForeignKey(
         "home.CustomText",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="user_testt",
     )
     testtt = models.ForeignKey(
         "home.CustomText",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="user_testtt",
-    )
-    fsrtfhgv = models.ForeignKey(
-        "home.HomePage",
-        on_delete=models.CASCADE,
-        null=True,
-        blank=True,
-        related_name="user_fsrtfhgv",
-    )
-    fcgv = models.ForeignKey(
-        "home.HomePage",
-        on_delete=models.CASCADE,
-        null=True,
-        blank=True,
-        related_name="user_fcgv",
     )
     tghrtg = models.ForeignKey(
         "users.User",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="user_tghrtg",
     )
     sfdarsdf = models.ForeignKey(
         "home.CustomText",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="user_sfdarsdf",
     )
 
